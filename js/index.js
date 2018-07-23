@@ -266,18 +266,19 @@ window.addEventListener("keydown", function (e) {
     }
 });
 // 移动端滑动事件
+window.addEventListener("touch",function(e){
+    e.preventDefault();
+});
 $("#wrapper").swipeLeft(function () {
     moveLeft();
 });
 $("#wrapper").swipeRight(function () {
     moveRight();
 });
-$("#wrapper").swipeUp(function (e) {
-    e.preventDefault();
+$("#wrapper").swipeUp(function () {
     moveUp();
 });
-$("#wrapper").swipeDown(function (e) {
-    e.preventDefault();
+$("#wrapper").swipeDown(function () {
     moveDown();
 });
 restar.onclick = init;
