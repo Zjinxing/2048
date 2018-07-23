@@ -266,7 +266,7 @@ window.addEventListener("keydown", function (e) {
     }
 });
 // 移动端滑动事件
-window.addEventListener("touch",function(e){
+window.addEventListener("touchmove",function(e){
     e.preventDefault();
 });
 $("#wrapper").swipeLeft(function () {
