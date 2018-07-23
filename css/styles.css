@@ -1,0 +1,148 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 5px;
+  background: rgb(230, 220, 224);
+}
+
+.cell {
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+  background: rgb(247, 247, 247);
+  text-align: center;
+  font-size: 32px;
+  line-height: 65px;
+  border-radius: 5px
+}
+
+#btns {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+}
+
+#btns li:first-child {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+
+#btns li:nth-child(2) {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+#btns li:nth-child(3) {
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+}
+
+#btns li:last-child {
+  display: inline-block;
+  position: absolute;
+  left: 75px;
+  top: 25px;
+}
+
+#newGame {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(250, 118, 42);
+  border: none;
+  border-radius: 3px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+#over {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(180, 180, 180, 0.6);
+  z-index: 50;
+}
+
+#over span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(252, 121, 14);
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+._2 {
+  background: rgb(247, 247, 200);
+}
+
+._4 {
+  background: rgb(241, 235, 174);
+}
+
+._8 {
+  background: rgb(247, 181, 60);
+}
+
+._16,
+._16384 {
+  background: rgb(250, 118, 42);
+}
+
+._32,
+._8192 {
+  background: rgb(250, 90, 42);
+}
+
+._64,
+._4096 {
+  background: rgb(250, 60, 42);
+}
+
+._128 {
+  background: rgb(247, 210, 60);
+}
+
+._256 {
+  background: rgb(228, 190, 41);
+}
+
+._512 {
+  background: rgb(235, 209, 19);
+}
+
+._1024 {
+  background: rgb(190, 180, 60);
+}
+
+._2048 {
+  background: rgb(247, 210, 60);
+}
