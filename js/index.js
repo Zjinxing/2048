@@ -267,19 +267,17 @@ window.addEventListener("keydown", function (e) {
 });
 // 移动端滑动事件
 $("#wrapper").swipeLeft(function () {
-    console.log("test");
     moveLeft();
 });
 $("#wrapper").swipeRight(function () {
-    console.log("test");
     moveRight();
 });
-$("#wrapper").swipeUp(function () {
-    console.log("test");
+$("#wrapper").swipeUp(function (e) {
+    e.preventDefault();
     moveUp();
 });
-$("#wrapper").swipeDown(function () {
-    console.log("test");
+$("#wrapper").swipeDown(function (e) {
+    e.preventDefault();
     moveDown();
 });
 restar.onclick = init;
