@@ -268,6 +268,7 @@ window.addEventListener("keydown", function (e) {
 // 移动端滑动事件
 window.addEventListener("touchmove",function(e){
     e.preventDefault();
+    e.stopPropagation();
 },{passive:false});
 $("#wrapper").swipeLeft(function () {
     moveLeft();
